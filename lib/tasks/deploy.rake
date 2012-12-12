@@ -7,4 +7,10 @@ namespace :heroku do
     system "heroku run rake db:migrate --app #{app}"
     system "heroku maintenance:off --app #{app}"
   end
+
+  task init: :environment do
+    system "git push heroku master"
+    system "heroku addons:add sendgrid:starter"
+    system "heroku run rake db:seed --app #{app}"
+  end
 end

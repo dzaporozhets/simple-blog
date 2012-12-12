@@ -1,0 +1,8 @@
+- @posts.each do |post|
+  %h5
+    = link_to post.title, post
+  %div
+    = post.preview
+  %hr
+
+= paginate @posts

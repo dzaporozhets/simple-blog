@@ -1,0 +1,11 @@
+host: "yourapp.heroku.com"
+
+# Heroku app name
+heroku_name: "shrouded-sands-8342"
+
+# Blog name
+blog_title: 'Simple Blog'
+
+# Google analytics code
+ga_enabled: true
+ga_code: 'UA-2XXXXX305-7'

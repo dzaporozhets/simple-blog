@@ -1,4 +1,5 @@
-host: "yourapp.heroku.com"
+host: "shrouded-sands-8342.herokuapp.com"
+email_from: 'notify@shrouded-sands-8342.herokuapp.com'
 
 # Heroku app name
 heroku_name: "shrouded-sands-8342"

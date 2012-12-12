@@ -11,4 +11,6 @@ class Post < ActiveRecord::Base
   validates :body, presence: true
   validates :preview, presence: true
   validates :author, presence: true
+
+  delegate :name, :email, to: :author, prefix: true
 end

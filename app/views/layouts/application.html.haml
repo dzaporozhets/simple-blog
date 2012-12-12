@@ -41,6 +41,9 @@
           = yield
         .span4
           %h4 Recent posts:
-          - Post.published.recent.limit(20).each do |post|
-            = link_to post.title, post
+          %ul
+            - Post.published.recent.limit(20).each do |post|
+              %li
+                = link_to post.title, post
+                %small= post.created_at
 
